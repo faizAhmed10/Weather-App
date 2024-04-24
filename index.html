@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Weather App</h1>
+    <div class="search">
+        <input id="inp" type="text" placeholder="Search a city...">
+        <button id="btn" onclick="search()">Search</button>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <img id="sun_rise" src="img/sunrise.png" alt="">
+            <p id="humidity"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+        </div>
+        <div class="card">
+            <img id="temp_img" src="img/sun.png" alt="">
+            <p id="temp"></p>
+            <p id="min-temp"></p>
+            <p id="max-temp"></p>
+        </div>
+        <div class="card">
+            <img id="cloud" src="img/cloud.png" alt="">
+            <p id="cloud_pct"></p>
+            <p id="wind_deg"></p>
+            <p id="wind_speed"></p>
+        </div>
+    </div>
+    <div class="other-cities">
+        <h3>Other Cities</h3>
+        <table>
+            <tr>
+                <th>SL.no</th>
+                <th>City</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="oth_city"></td>
+                <td class="oth_temp"></td>
+                <td class="oth_humidity"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="oth_city"></td>
+                <td class="oth_temp"></td>
+                <td class="oth_humidity"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="oth_city"></td>
+                <td class="oth_temp"></td>
+                <td class="oth_humidity"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="oth_city"></td>
+                <td class="oth_temp"></td>
+                <td class="oth_humidity"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
